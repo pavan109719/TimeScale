@@ -1,0 +1,138 @@
+.timescale{
+    position: relative;
+    left: 120px;
+    width: 80vw;
+    height: 5px;
+    /* position: fixed; */
+    border-radius: 3px;
+    display: flex;
+    background: rgba(89, 102, 102,0.2);
+    justify-content: space-between;
+    cursor: pointer;
+    top: 150px;
+    /* overflow-x: hidden; */
+
+}
+.hour{
+    border-top:1.5px solid rgba(89, 102, 102, 0.747);
+    border-bottom:1.5px solid rgba(89, 102, 102, 0.747);
+    background-color: white;
+    border-radius: 50%;
+    width: 5px;
+    /* height: 2px; */
+}
+
+.box{
+    background-color: rgba(89, 102, 102, 0.747);
+    height: 5px;
+    width: 1px;
+   
+}
+.box-range0{
+    background-color: #005187;
+    /* height: 5px; */
+    width: 1px;
+}
+.box-range1{
+    background-color: #ccbc08;
+    /* height: 5px; */
+    width: 1px;
+}
+.box-range2{
+    background-color:#3b8641;
+    /* height: 5px; */
+    width: 1px;
+}
+.flag{
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    top: -8px;
+    margin-top: -28px;
+    margin-left: -24px;
+    border-radius: 3px;
+    background: transparent;
+    z-index: -5;
+    font-size: 10px;
+    font-weight: 700;
+    color: black;
+    padding-left: 10px;
+    padding-top: 12px;
+    text-align: center;
+}
+.flag-0,.flag-1{
+    background: #005187;
+    color: white;
+}
+.flag-0::after,.flag-1::after{
+    border-top: #005187;
+}
+.flag-2,.flag-3{
+    background: #ccbc08;
+    color: white;
+}
+.flag-2::after,.flag-3::after{
+    border-top: #ccbc08;
+}
+.flag-4,.flag-5{
+    background: #3b8641;
+    color: white;
+}
+.flag-4::after,.flag-5::after{
+    border-top:#3b8641;
+}
+.flag::after{
+    content: "";
+    position: relative;
+    left:-15px;
+    top:24px;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    z-index: -5;
+}
+.content{
+    position: relative;
+    top: -50px;
+}
+.pivot{
+    width: 3px;
+    height: 5px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.hovered{
+    background: #8abbdd;
+}
+.selector{
+    width: 20px;
+    height: 20px;
+    /* background: cadetblue; */
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -11.5px;
+    margin-top: -8.5px;
+    border:2.5px solid #fff;
+    transition: all 0ms ease-in-out;
+}
+.wheel{
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -11.5px;
+    margin-top: -8.5px;
+    border:2.5px solid #fff;
+    transition: all 0ms ease-in-out;
+}
+.fade{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.hide{
+    transform: translateY(-100px);
+}
+.scale{
+    transform: scale(3);
+}
